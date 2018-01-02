@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>chrome style</title>
+<link rel="stylesheet" type="text/css" href="css/chromestyle.css" />
+<script language="Javascript "type="text/javascript" src="js/chrome.js"></script>
+</head>
+<body>
+<div class="chromestyle" id="chromemenu">
+<ul>
+<li><a href="http://www.dynamicdrive.com">Home</a></li>
+<li><a href="#" rel="dropmenu1">Resources</a></li>
+<li><a href="#" rel="dropmenu2">News</a></li>
+</ul>
+</div>
+
+<!--1st drop down menu --> 
+<div id="dropmenu1" class="dropmenudiv">
+<a href="http://www.dynamicdrive.com/">Dynamic Drive</a>
+<a href="http://www.cssdrive.com">CSS Drive</a>
+<a href="http://www.javascriptkit.com">JavaScript Kit</a>
+</div>
+
+
+<!--2nd drop down menu --> 
+<div id="dropmenu2" class="dropmenudiv" style="width: 150px;">
+<a href="http://www.cnn.com/">CNN</a>
+<a href="http://www.msnbc.com">MSNBC</a>
+<a href="http://news.bbc.co.uk">BBC News</a>
+</div>
+
+<script type="text/javascript">
+cssdropdown.startchrome("chromemenu")
+</script>
+</body>
+</html>
+

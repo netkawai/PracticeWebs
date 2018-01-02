@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+<title>top page</title> 
+<!--[if !IE]>
+<script type="text/javascript" src="js/deployJava.js" />
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>
+$(function(){
+  $("#test").css("background-color","red").html("Hello World!").fadeOut()
+});
+</script>
+</head>
+<body>
+<a href="ASKME/Frameset.html">ASKME Mobile site</a><br/>
+<a href="crypt/rsa2.html">RSA Demo site</a><br/>
+<!--[if !IE]>
+<a href='javascript:
+if (!deployJava.isWebStartInstalled("1.5+")) {
+	if (deployJava.installLatestJRE()) {
+		if (deployJava.launch("http://javafx.com/samples/DraggableMP3Player/webstart/DraggableMP3Player.jnlp")) {}
+	}
+} 
+else {
+	if (deployJava.launch("http://javafx.com/samples/DraggableMP3Player/webstart/DraggableMP3Player.jnlp")) {}
+}' onmouseover="window.status=''; return true;">
+Start JavaApplet?
+</a>
+<![endif]-->
+<div id="test"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <rewrite>
+            <rewriteMaps>
+                <rewriteMap name="StaticReWrites">
+                    <add key="/Practice/article1" value="/Practice/article.aspx?id=1&amp;amp;title=some-title" />
+                </rewriteMap>
+            </rewriteMaps>
+            <rules>
+                <rule name="Rewrite rule1 for StaticReWrites">
+                    <match url=".*" />
+                    <conditions>
+                        <add input="{StaticReWrites:{REQUEST_URI}}" pattern="(.+)" />
+                    </conditions>
+                    <action type="Rewrite" url="{C:1}" appendQueryString="false" />
+                </rule>
+            </rules>
+        </rewrite>
+    </system.webServer>
+</configuration>
